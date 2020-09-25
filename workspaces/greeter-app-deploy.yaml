@@ -8,7 +8,7 @@ spec:
   params:
     - name: image-name #<.>
       description: The fully qualified image name e.g example.com/tekton-tutorial/greeter
-      default: example.com/tekton-tutorial/greeter
+      default: image-registry.openshift-image-registry.svc:5000/workspace-auth-demo/greeter
     - name: context-dir
       description: >-
         The application framework to use, value can be either quarkus or springboot
@@ -17,7 +17,7 @@ spec:
       default: greeter
     - name: github-repo-url
       description: The GitHub Repo of the Java Application
-      default: https://github.com/redhat-scholars/tekton-tutorial-greeter
+      default: https://github.com/geekmee/tekton-tutorial-greeter
     - name: github-repo-revision
       description: The GitHub revision to use
       default: staging
